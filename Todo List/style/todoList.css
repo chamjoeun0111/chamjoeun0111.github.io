@@ -1,0 +1,236 @@
+body {
+    /* position: relative; */
+    width: 100vw;
+    height: 100vh;
+}
+
+img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.world {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-image: url("https://ifh.cc/g/hFrAOV.jpg"); */
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    color: white;
+    font-size: 2.5em;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+
+.content {
+    width: 100%;
+    height: 90%;
+    display: flex;
+
+}
+/* 캘린더와 날씨 */
+.calendar {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.date {
+    width: 100%;
+    height: 80%;
+}
+
+.weather {
+    width: 100%;
+    height: 8%;
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1em 0 0 0;
+    color: white;
+}
+
+.state {
+    padding: 1em;
+}
+
+/* 로그인 기능 */
+.login {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.welcome {
+    font-size: 1.5em;
+}
+
+.loginForm {
+    outline: 2px solid beige;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginInput {
+    width: 60%;
+    height: 2em;
+    margin: 0 3% 0 0;
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background:rgba(27, 87, 27, 0);
+}
+
+.loginInput::placeholder {
+    color: white;
+}
+
+.loginButton {
+    width: 4em;
+    height: 2.2em;
+    border-radius: 2px;
+    border-radius: 0.5em;
+    z-index: 1000;
+    box-shadow: 4px 4px 15px;
+}
+
+.loginButton:focus {
+    width: 4em;
+    height: 2.2em;
+    border-radius: 2px;
+    border-radius: 0.5em;
+    z-index: 1000;
+    box-shadow: 4px 4px 15px;
+    transform: translateX(2px) translateY(2px);
+}
+
+/* 인용문 */
+.quote {
+    font-size: 0.8em;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    width: 50em;
+    z-index: 100;
+    text-align: center;
+    bottom: 5em;
+}
+
+.author {
+    font-size: 0.5em;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    text-align: center;
+    bottom: 4em;
+}
+
+/* 해야 할 일 */
+.todolist {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.whatTodo {
+    font-size: 2em;
+    padding: 40px 0 40px 0;
+    font-weight: 800;
+}
+
+.listbox {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    width: 60%;
+    padding: 0 0 0 2em;
+}
+
+.todoForm {
+    width: 100%;
+
+}
+
+.todoInput {
+    border-radius: 10px;
+    width: 80%;
+    height: 2.5em;
+    
+}
+
+.todoButton {
+    border-radius: 10px;
+    width: 2.5em;
+    height: 2.5em;
+    background: white;
+}
+
+/* 목록스타일 */
+
+.liCreated input::after {
+    width: 50px;
+}
+
+.liCreated span {
+    display: inline-block;
+    width: 250px;
+    padding: 1.5em 0 0 0;
+}
+
+.liCreated button {
+    width: 2em;
+    height: 2em;
+    border-radius: 0.5em;
+}
+
+.liCreated button:focus {
+    width: 2em;
+    height: 2em;
+    border-radius: 0.5em;
+    transform: translateX(2px) translateY(2px);
+}
+
+.liCreated::after {
+    content : "";
+    background: black;
+    width: 270px;
+    height: 2px;
+    display: inline-block;
+}
